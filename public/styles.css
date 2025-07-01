@@ -1,0 +1,131 @@
+/* General body styles */
+body {
+  background: #f4f6fb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered container */
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 24px;
+}
+
+/* Message list */
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.message {
+  background: #e9f5ff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.message .user {
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.message .text {
+  color: #22223b;
+  margin-bottom: 6px;
+}
+
+.message .date {
+  font-size: 0.85em;
+  color: #7b8794;
+  align-self: flex-end;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+
+textarea[name="messageInput"] {
+  min-height: 100px;
+  resize: vertical;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border: 1.5px solid #2563eb;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+.message-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.message-button a {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+
+.message-button a:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.15);
+}
