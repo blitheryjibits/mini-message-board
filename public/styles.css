@@ -75,7 +75,7 @@ input[type="text"] {
   transition: border 0.2s;
 }
 
-textarea[name="messageInput"] {
+textarea[name="text"] {
   min-height: 100px;
   resize: vertical;
   font-size: 1em;
