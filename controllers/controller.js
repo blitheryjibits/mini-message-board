@@ -8,7 +8,7 @@ const controller = {
         console.log(result);
         res.render('indexTemplate', { messages: result});
         } catch(err) {
-            res.status(500).send('Error retrieving messages');
+            res.status(500).send('Error retrieving messages: ' + err);
         }
     },
 
